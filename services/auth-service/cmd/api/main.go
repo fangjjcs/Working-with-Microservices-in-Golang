@@ -76,9 +76,9 @@ func connectDB() *sql.DB {
 		if err != nil {
 			log.Println("Postgres is not ready yet")
 			dbConnCounts++
-			return conn
 		} else {
 			log.Println("Connect to Postgres!")
+			return conn
 		}
 
 		if dbConnCounts > 10 {
