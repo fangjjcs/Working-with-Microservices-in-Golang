@@ -2,3 +2,4 @@
 workspace.code-workspace
 
 .DS_Store
+docker/db-data
