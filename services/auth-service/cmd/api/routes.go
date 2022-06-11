@@ -26,5 +26,7 @@ func (app *Config) routes() http.Handler {
 	// A simple middleware to check the service is alive or not
 	mux.Use(middleware.Heartbeat("/ping"))
 
+	mux.Post("/auth", app.Authenticate)
+
 	return mux
 }
