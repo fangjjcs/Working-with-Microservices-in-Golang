@@ -3,3 +3,5 @@ workspace.code-workspace
 
 .DS_Store
 docker/db-data
+services/broker-service/brokerApp
+services/auth-service/authApp
